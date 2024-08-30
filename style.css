@@ -1,20 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
 }
+
 .exemplo h1 {
     background-color: aqua;
     padding: 15px;
     margin-bottom: 15px;
 }
 
-body{
-    padding: 0 15px 0 15px;
+body {
+    padding: 0 15px;
     margin-left: 100px;
     margin-right: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
     border-radius: 15px;
 }
 
@@ -23,11 +22,14 @@ body{
     border-radius: 10px;
 }
 
-.main figcaption{
-    color:blueviolet;
+.main figcaption {
+    color: blueviolet;
+    width: auto;
+    background-color: #007BFF;
+    box-shadow: 0 4px 8px black;
 }
 
-input{
+input {
     background-color: whitesmoke;
     width: 100%;
     padding: 12px 20px;
@@ -36,7 +38,7 @@ input{
     border-radius: 5px;
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -47,7 +49,7 @@ textarea{
     resize: none;
 }
 
-button{
+button {
     margin-top: 10px;
     width: 100%;
     height: 30px;
@@ -59,69 +61,58 @@ button{
     font-size: 1rem;
 }
 
-
-
 .container {
-    
     background-color: #555;
-    display: inline-flex;
+    display: flex; /* Corrigido de inline-flex para flex */
     justify-content: center;
+    flex-wrap: wrap; /* Adicionado para responsividade */
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.card1 {
+.card1, .card2, .card3 {
     background: #fff;
     padding: 20px;
     margin: 20px;
-    width:350px;
+    width: 350px;
     text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #ddd; /* Adiciona uma borda de 2px com cor #ddd */
+    border-radius: 8px;     /* Adiciona bordas arredondadas */
 }
+
 .card1 button {
     border-radius: 10px;
 }
 
-.card1 h3{
+.card1 h3 {
     color: brown;
 }
 
-.card2 {
-    background: #fff;
-    padding: 20px;
-    margin: 20px;
-    width:350px;
-}
-.card3 {
-    background: #fff;
-    padding: 20px;
-    margin: 20px;
-    width:350px;
-}
-
 #contato {
-    color:brown;
+    color: brown;
 }
 
 .container2 {
     background-color: #f7f3f3;
-    display: inline-flex;
+    display: flex; /* Corrigido de inline-flex para flex */
     justify-content: center;
-   
-    
+    flex-wrap: wrap; /* Adicionado para responsividade */
 }
 
 .container2 img {
-    
-    display: inline-flex;
-    Width:auto;
-    flex-wrap: wrap;
+    display: block; /* Corrigido de inline-flex para block */
+    width: auto;
+    margin: 0 auto;
     gap: 20px;
-    
 }
-.col-sm-6{
+
+.col-sm-6 {
     flex: 1 1 50%;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 20px;
     flex-direction: row;
@@ -129,43 +120,36 @@ button{
     justify-content: center;
 }
 
-.menu a  {
-text-decoration: none;
-color: black;
-padding: 10px;
-transition: color 0.3;
-background-color: mediumseagreen;
-border-radius: 8px;
-justify-content: right;
-box-shadow: rgba(0, 0, 0, 0.2);
-
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s; /* Corrigido para adicionar unidade de tempo */
+    background-color: mediumseagreen;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .menu a:hover {
     color: #007BFF;
     background-color: #555;
-    padding: 10px;
-    justify-content: right;
-
 }
 
 .texth1 {
     text-align: center;
     align-items: center;
     display: flex;
-
 }
+
 nav {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.2);
-   
-
 }
+
 @media (min-width: 768px) {
     .container2 {
         flex-direction: row;
-        align-items:flex-start;
-
+        align-items: flex-start;
     }
     .col-sm-6 {
         flex: 1 1 48%;
@@ -174,26 +158,31 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    .card1,.card2,.card3 {
+    .card1, .card2, .card3 {
         width: calc(33.33% - 20px);
         margin: 10px 0;
-        background: #fff;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-        box-sizing: border-box;
-
+        border-top: 5px solid rgb(108, 219, 229);
     }
 }
 
-.texto { 
-    
+.texto {
     background-color: #007BFF;
     color: gold;
     text-align: center;
     margin: 30px;
     padding: 60px;
+    background-image: url("https://www.eliane.com/upload/produtos/eliane-silex-preto-po-90x90cm-03.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+ .logo {
+   width: 50%;
+   height: 100%;
+   align-items: center;
+ }
+   
+ 
