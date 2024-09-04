@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -183,6 +184,60 @@ nav {
    width: 50%;
    height: 100%;
    align-items: center;
- }
+ } 
+/* Arrumar daqui ate a */
+ .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-image: url(https://img.freepik.com/vetores-gratis/design-de-baixo-poli-abstrato-com-linhas-e-pontos-de-conexao_1048-9060.jpg?t=st=1725407194~exp=1725410794~hmac=31183ffebcf2fde309749ff598109a3829b955d68d7adbf12d442e3b66c6b14f&w=740);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.container4 .col-md-6 {
+    flex: 1 1 50%; 
+    padding: 20px; 
+    width: 50px;
+}
+
+.container4 img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.container4 h2 {
+    color: rgb(17, 106, 222);
+    margin-bottom: 20px; /
+}
+
+.container4 p {
+    color: rgb(84, 153, 243);
+}
+
+.botao {
+    flex:  80%;
+    display: flex;
+    margin: 20px; 
+}
+
+.botao button {
+    background-color: green;
+    color: white;
+    border: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao button:hover {
+    background-color: black; 
    
- 
+}
+/*ate aqui */
