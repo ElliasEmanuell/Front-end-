@@ -54,7 +54,7 @@ button {
     width: 100%;
     height: 30px;
     border-radius: 5px;
-    border-color: green;
+    border-color: rgb(145, 237, 145);
     background-color: green;
     color: white;
     font-weight: bolder;
@@ -62,7 +62,7 @@ button {
 }
 
 .container {
-    background-color: #555;
+    background-color: #fffdfd;
     display: flex; /* Corrigido de inline-flex para flex */
     justify-content: center;
     flex-wrap: wrap; /* Adicionado para responsividade */
@@ -72,23 +72,49 @@ button {
 }
 
 .card1, .card2, .card3 {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     margin: 20px;
     width: 350px;
     text-align: center;
     box-sizing: border-box;
-    border: 2px solid #ddd; /* Adiciona uma borda de 2px com cor #ddd */
-    border-radius: 8px;     /* Adiciona bordas arredondadas */
+    border: 2px solid whitesmoke; /* Adiciona uma borda de 2px com cor #ddd */
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    gap: 80px;
+    text-align: left;
+         
 }
 
 .card1 button {
     border-radius: 10px;
 }
 
-.card1 h3 {
-    color: brown;
+.card2 h3 {
+    color: rgb(133, 234, 243);
 }
+
+.card3 h3 {
+    color: rgb(133, 234, 243);
+}
+
+.card1 h3 {
+    color: rgb(133, 234, 243);
+}
+
+.card1 p {
+    color: rgb(0, 0, 0);
+    
+}
+.card2 p {
+    color: rgb(0, 0, 0);
+    
+}
+.card3 p {
+    color: rgb(0, 0, 0);
+    
+}
+
 
 #contato {
     color: brown;
@@ -201,12 +227,19 @@ nav {
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: left; /* Alinha itens ao início do contêiner */
+    justify-content: right; /* Alinha itens ao início do contêiner (canto esquerdo) */
 }
+
+
 .container1 p {
-    text-align: left;
+    text-align: center;
     color: #ddd;
     font-size: 16px; /* Ajusta o tamanho da fonte */
     line-height: 1.5; 
+    font-size: 14px; /* Ajuste o tamanho do texto conforme necessário */
+    margin: 0;
 }
     button {
         background-color: #4CAF50; /* Cor de fundo */
@@ -228,4 +261,35 @@ nav {
     background-color: black; 
    
 }
-/*ate aqui */
+.imagens{
+    width: auto;
+    height: auto;
+    display: inline-block;
+   
+}
+.botao2 {
+    display: inline-block; /* Permite que a <div> se ajuste ao tamanho do conteúdo e se comporte como um bloco de linha */
+    background-color: #007BFF; /* Cor de fundo do "botão" */
+    padding: 10px 20px; /* Padding interno (vertical e horizontal) */
+    text-align: center; /* Alinha o texto no centro */
+    border: none; /* Remove qualquer borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transições suaves para as propriedades */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar um efeito de profundidade */
+    user-select: none; /* Evita que o texto seja selecionado */
+    text-decoration: none; /* Remove o sublinhado, se aplicável */
+    
+}
+
+.botao2:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse sobre o "botão" */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.botao2:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Sombra ao focar para acessibilidade */
+}
