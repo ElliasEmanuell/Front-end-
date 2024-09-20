@@ -153,6 +153,10 @@ button {
     text-align: center;
     align-items: center;
     display: flex;
+    
+    margin-bottom: 20px;
+
+
 }
 
 nav {
@@ -287,4 +291,5 @@ td:last-child, th:last-child {
     text-align: center;
     align-items: center;
     padding-inline-end: auto;
+    margin-top: 20px
 }
